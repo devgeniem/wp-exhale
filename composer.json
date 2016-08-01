@@ -1,0 +1,23 @@
+{
+  "name": "devgeniem/wp-exhale",
+  "type": "wordpress-muplugin",
+  "license": "MIT",
+  "description": "Creates Deveploper friendly xml api endpoint for 3rd party integrations on your data.",
+  "homepage": "http://geniem.com",
+  "authors": [
+    {
+      "name": "Onni Hakala",
+      "email": "onni.hakala@geniem.com",
+      "homepage": "https://github.com/onnimonni",
+      "role": "developer"
+    }
+  ],
+  "keywords": [
+    "wordpress", "wp","exporter","framework"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "v1.0.12",
+    "sabre/xml": "1.4.2"
+  }
+}
