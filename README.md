@@ -62,6 +62,8 @@ This plugin uses [sabre/xml](http://sabre.io/xml/writing/) inside.
 The array from `get_export_data()` function is mapped into xml write operation in sabre/xml.
 This way you get all the good things from sabre/xml as well.
 
+If the exhale url is requested the XML is produced in `plugins_loaded` hook and then process is stopped immediately.
+
 ## Settings
 You can override default exporter url by defining in wp-config:
 ```php
