@@ -4,7 +4,7 @@ namespace Exhale;
 // Use sabre xml
 use Sabre\Xml\Service as XML_Service;
 
-// Use This for determining abstract classes
+// Use This for excluding abstract classes from all implementing interfaces
 use ReflectionClass;
 
 /**

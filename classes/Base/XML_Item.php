@@ -45,7 +45,7 @@ class XML_Item {
     function add_and_implode_if_not_empty(string $key, array $values, $default=null){
 
         // Check that array doesn't contain null values
-        if (! in_array(null, $values)) {
+        if (! in_array(null, $values) ) {
             $this->data[$key] = implode($values);
         } elseif(null != $default) {
             $this->data[$key] = $default;
