@@ -1,6 +1,6 @@
 # WP Plugin: Exhale
-Developer friendly framework for creating xml data exports from wordpress.
-It works only with php7.0 or better because we use scalar type hinting.
+Developer friendly framework for creating xml data exports from WordPress.
+This works only with php7.0 or better because we use scalar type hinting.
 
 ## Install plugin
 ```
@@ -48,8 +48,7 @@ abstract class MyProviderName implements \Exhale\Base\XML {
 }
 ```
 
-This class now automatically provides custom data export from:
-`http://yoursite.com/api/export/myprovidername.xml`
+This class now automatically provides custom data export from: `http://yoursite.com/api/export/myprovidername.xml`
 
 With contents:
 ```xml
@@ -71,7 +70,7 @@ define('EXHALE_URL_PREFIX','/my-custom/api/url/');
 The earlier example would now be accessible from: `http://yoursite.com/api/export/myprovidername.xml`
 
 ## Special cases
-If you want to add attributes to your elements or have multiple elements with same key you can do this:
+If you want to add attributes to your elements or have multiple elements with same key you can do this with sabre/xml compatible custom arrays:
 ```php
 static public function get_export_data() {
         return array(
