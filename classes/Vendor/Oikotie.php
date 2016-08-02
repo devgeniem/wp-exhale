@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Exhale\Base;
+namespace Exhale\Vendor;
 
 /**
  * This class exists so that users of Exhale can start producing xml really quickly
