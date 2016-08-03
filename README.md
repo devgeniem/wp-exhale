@@ -18,7 +18,7 @@ For example this could look like:
 /**
  * This class exists so that users of Exhale can start producing xml really quickly
  */
-class MyProviderName implements \Exhale\Base\XML {
+class MyProviderName implements \Exhale\Type\XML {
     /**
      * Returns exportable apartments to Vuokraovi
      */
