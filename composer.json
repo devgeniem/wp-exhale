@@ -2,7 +2,7 @@
   "name": "devgeniem/wp-exhale",
   "type": "wordpress-muplugin",
   "license": "MIT",
-  "description": "Creates Deveploper friendly xml api endpoint for 3rd party integrations on your data.",
+  "description": "Creates Developer friendly xml api endpoint for 3rd party integrations on your data.",
   "homepage": "http://geniem.com",
   "authors": [
     {
