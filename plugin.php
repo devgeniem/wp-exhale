@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Exhale
  * Description: Developer friendly exporter for WordPress
- * Version: 0.1
+ * Version: 0.1.4
  * Author: Onni Hakala / Geniem Oy
  * Author URI: http://geniem.com
  * License: GPLv2
