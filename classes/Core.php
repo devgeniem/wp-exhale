@@ -182,14 +182,14 @@ class Core {
      * Returns all classes which implement xml endpoint
      */
     static function getXMLHandlers($vendor) {
-        // Get all classes which
+        // Get all classes which implement Exhale Exporter
         $implementors = self::getImplementingClasses(__NAMESPACE__."\Type\XML");
 
-        // Get vendors which serve this endpoint
+        // Get all vendors which serve this endpoint
         $handlers = array_filter( $implementors, function( $implementor ) use ( $vendor ) {
-                // Check if the name of the class which implements Vendor\XML matches to
-                // requested endpoint
-                $split = explode('\\',$vendor);
+                // Check if the name of the class which implements Vendor\XML
+                // matches to requested endpoint
+                $split = explode('\\',$implementor);
                 return ( strtolower( end($split) )  === $vendor );
             }
         );
