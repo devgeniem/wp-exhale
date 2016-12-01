@@ -17,7 +17,7 @@ class Core {
      */
     static function init() {
         // Respond to api endpoints.
-        add_action( 'plugins_loaded', array( __CLASS__, 'create_routes' ) );
+        add_action( 'init', array( __CLASS__, 'create_routes' ) );
     }
 
     /**
