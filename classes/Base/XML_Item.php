@@ -16,7 +16,7 @@ class XML_Item {
      * Or in different parameters add($item,$value)
      */
     function add($item, $value=null) {
-        if ($value != null) {
+        if (!is_array($item)) {
             $this->data[] = [$item => $value];
         } else {
             $this->data[] = $item;
